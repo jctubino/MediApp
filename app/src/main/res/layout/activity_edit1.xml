@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit1_frame">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv1"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="214dp"
+            android:padding="16dp"
+            >
+
+
+            <EditText
+                android:id="@+id/edit1_name"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:hint="@string/med1_name"
+                android:layout_margin="5dp"
+                android:textColor="@color/ColorPrimaryDark"
+                android:layout_marginBottom="12dp"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:id="@+id/med_desc1"
+                android:hint="@string/med1_desc"
+                android:layout_margin="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/button_clear1"
+                android:layout_alignEnd="@+id/button_clear1" />
+
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="34dp"
+                android:text="CLEAR DATA"
+                android:id="@+id/button_clear1"
+                android:textSize="8sp"
+                android:textColor="@android:color/white"
+                android:background="@color/ColorPrimary"
+                android:layout_alignTop="@+id/edit1_name"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/cv2"
+        >
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/rellay_edit1"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/label_alarms1"
+                android:src="@drawable/label_alarm" />
+
+            <Button
+                android:id="@+id/addAlarm_edit1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@android:color/white"
+                android:textColor="@color/ColorPrimary"
+                android:layout_margin="5dp"
+                android:text="+ADD ALARM"
+                 />
+
+
+            <TextView
+                android:id="@+id/alarmprompt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="62dp"
+                android:layout_marginStart="62dp"
+                android:layout_weight="0.13" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/cv3"
+        >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pillcountlabel"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pillbox"
+                android:layout_marginTop="66dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imageView2" />
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:text="00"
+                    android:id="@+id/pillnum"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:layout_alignTop="@+id/imageView2"
+                    android:layout_alignRight="@+id/imageView2"
+                    android:layout_alignEnd="@+id/imageView2"
+                    android:textColor="@android:color/white"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pillintakebox"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/imageView3" />
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:text="00"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:id="@+id/pillintakenum"
+                    android:textColor="@android:color/white"
+                    android:layout_centerVertical="true"
+                    android:layout_alignLeft="@+id/pillnum"
+                    android:layout_alignStart="@+id/pillnum" />
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:background="@color/ColorPrimary"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="5dp"
+                    android:text="SAVE"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/button"
+                    android:layout_toStartOf="@+id/button"
+                    android:id="@+id/save_edit"/>
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:background="@color/ColorPrimary"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="5dp"
+                    android:text="CANCEL"
+                    android:id="@+id/button"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignLeft="@+id/pillintakenum"
+                    android:layout_alignStart="@+id/pillintakenum" />
+            </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</ScrollView>

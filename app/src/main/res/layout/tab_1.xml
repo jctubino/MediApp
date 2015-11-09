@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/bgColor"
+    android:id="@+id/tab1_frame">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <!-- FIRST CARD VIEW -->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgColor"
+        android:id="@+id/cv1"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/med_photo1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/pillcount1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/med_name1"
+            android:textSize="18sp"
+            android:text="@string/med1_name"
+            android:textColor="@color/ColorPrimaryDark"
+            android:layout_alignTop="@+id/med_photo1"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/med_desc1"
+            android:text="@string/med1_desc"
+            android:layout_below="@+id/med_name1"
+            android:layout_alignLeft="@+id/med_name1"
+            android:layout_alignStart="@+id/med_name1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/med_alarm1"
+            android:text="@string/med1_alarm"
+            android:layout_below="@+id/med_desc1"
+            android:layout_alignLeft="@+id/med_desc1"
+            android:layout_alignStart="@+id/med_desc1" />
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="34dp"
+            android:text="EDIT"
+            android:id="@+id/button_edit1"
+            android:textSize="8sp"
+            android:textColor="@color/ColorPrimary"
+            android:background="@android:color/white"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:nestedScrollingEnabled="false" />
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="34dp"
+            android:text="CLEAR"
+            android:id="@+id/button_clear1"
+            android:textSize="8sp"
+            android:textColor="@color/ColorPrimary"
+            android:background="@android:color/white"
+
+            android:layout_below="@+id/med_desc1"
+            android:layout_alignLeft="@+id/button_edit1"
+            android:layout_alignStart="@+id/button_edit1" />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="00"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:id="@+id/pillcount1"
+            android:layout_alignRight="@+id/med_photo1"
+            android:layout_alignEnd="@+id/med_photo1"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginEnd="13dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignBottom="@+id/med_photo1" />
+
+    </RelativeLayout>
+
+        <!-- SECOND CARD VIEW -->
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgColor"
+        android:id="@+id/cv2"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/med_photo2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/pillcount1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/med_name2"
+                android:textSize="18sp"
+                android:text="@string/med2_name"
+                android:textColor="@color/ColorPrimaryDark"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/med_desc2"
+                android:text="@string/med2_desc"
+                android:layout_below="@+id/med_name2"
+                android:layout_alignLeft="@+id/med_name2"
+                android:layout_alignStart="@+id/med_name2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/med_alarm2"
+                android:text="@string/med2_alarm"
+                android:layout_below="@+id/med_desc2"
+                android:layout_alignLeft="@+id/med_desc2"
+                android:layout_alignStart="@+id/med_desc2" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="34dp"
+                android:text="EDIT"
+                android:id="@+id/button_edit2"
+                android:textSize="8sp"
+                android:textColor="@color/ColorPrimary"
+                android:background="@android:color/white"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="34dp"
+                android:text="CLEAR"
+                android:id="@+id/button_clear2"
+                android:textSize="8sp"
+                android:textColor="@color/ColorPrimary"
+                android:background="@android:color/white"
+
+                android:layout_below="@+id/med_desc2"
+                android:layout_alignLeft="@+id/button_edit2"
+                android:layout_alignStart="@+id/button_edit2" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="00"
+                android:textSize="25sp"
+                android:textColor="@android:color/white"
+                android:id="@+id/pillcount2"
+                android:layout_alignRight="@+id/med_photo2"
+                android:layout_alignEnd="@+id/med_photo2"
+                android:layout_marginTop="9dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginEnd="13dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/med_photo2" />
+
+        </RelativeLayout>
+
+        <!-- THIRD CARD VIEW -->
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgColor"
+        android:id="@+id/cv3"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/med_photo3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/pillcount1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/med_name3"
+                android:textSize="18sp"
+                android:textColor="@color/ColorPrimaryDark"
+                android:text="@string/med3_name"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/med_desc3"
+                android:text="@string/med3_desc"
+                android:layout_below="@+id/med_name3"
+                android:layout_alignLeft="@+id/med_name3"
+                android:layout_alignStart="@+id/med_name3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/med_alarm3"
+                android:text="@string/med3_alarm"
+                android:layout_below="@+id/med_desc3"
+                android:layout_alignLeft="@+id/med_desc3"
+                android:layout_alignStart="@+id/med_desc3" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="34dp"
+                android:text="EDIT"
+                android:id="@+id/button_edit3"
+                android:textSize="8sp"
+                android:textColor="@color/ColorPrimary"
+                android:background="@android:color/white"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="34dp"
+                android:text="CLEAR"
+                android:id="@+id/button_clear3"
+                android:textSize="8sp"
+                android:textColor="@color/ColorPrimary"
+                android:background="@android:color/white"
+
+                android:layout_below="@+id/med_desc3"
+                android:layout_alignLeft="@+id/button_edit3"
+                android:layout_alignStart="@+id/button_edit3" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="00"
+                android:textSize="25sp"
+                android:textColor="@android:color/white"
+                android:id="@+id/pillcount3"
+                android:layout_alignRight="@+id/med_photo3"
+                android:layout_alignEnd="@+id/med_photo3"
+                android:layout_marginTop="9dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginEnd="13dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/med_photo3" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!-- FOURTH CARD VIEW -->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgColor"
+        android:id="@+id/cv4"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/med_photo4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/pillcount1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/med_name4"
+                android:textColor="@color/ColorPrimaryDark"
+                android:textSize="18sp"
+                android:text="@string/med4_name"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/med_desc4"
+                android:text="@string/med4_desc"
+                android:layout_below="@+id/med_name4"
+                android:layout_alignLeft="@+id/med_name4"
+                android:layout_alignStart="@+id/med_name4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/med_alarm4"
+                android:text="@string/med4_alarm"
+                android:layout_below="@+id/med_desc4"
+                android:layout_alignLeft="@+id/med_desc4"
+                android:layout_alignStart="@+id/med_desc4" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="34dp"
+                android:text="EDIT"
+                android:id="@+id/button_edit4"
+                android:textSize="8sp"
+                android:textColor="@color/ColorPrimary"
+                android:background="@android:color/white"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="34dp"
+                android:text="CLEAR"
+                android:id="@+id/button_clear4"
+                android:textSize="8sp"
+                android:textColor="@color/ColorPrimary"
+                android:background="@android:color/white"
+
+                android:layout_below="@+id/med_desc4"
+                android:layout_alignLeft="@+id/button_edit4"
+                android:layout_alignStart="@+id/button_edit4" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="00"
+                android:textSize="25sp"
+                android:textColor="@android:color/white"
+                android:id="@+id/pillcount4"
+                android:layout_alignRight="@+id/med_photo4"
+                android:layout_alignEnd="@+id/med_photo4"
+                android:layout_marginTop="9dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginEnd="13dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/med_photo4" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!-- FIFTH CARD VIEW -->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgColor"
+        android:id="@+id/cv5"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/med_photo5"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/pillcount1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/med_name5"
+                android:textSize="18sp"
+                android:textColor="@color/ColorPrimaryDark"
+                android:text="@string/med5_name"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/med_desc5"
+                android:text="@string/med5_desc"
+                android:layout_below="@+id/med_name5"
+                android:layout_alignLeft="@+id/med_name5"
+                android:layout_alignStart="@+id/med_name5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/med_alarm5"
+                android:text="@string/med5_alarm"
+                android:layout_below="@+id/med_desc5"
+                android:layout_alignLeft="@+id/med_desc5"
+                android:layout_alignStart="@+id/med_desc5" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="34dp"
+                android:text="EDIT"
+                android:id="@+id/button_edit5"
+                android:textSize="8sp"
+                android:textColor="@color/ColorPrimary"
+                android:background="@android:color/white"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="34dp"
+                android:text="CLEAR"
+                android:id="@+id/button_clear5"
+                android:textSize="8sp"
+                android:textColor="@color/ColorPrimary"
+                android:background="@android:color/white"
+
+                android:layout_below="@+id/med_desc5"
+                android:layout_alignLeft="@+id/button_edit5"
+                android:layout_alignStart="@+id/button_edit5" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="00"
+                android:textSize="25sp"
+                android:textColor="@android:color/white"
+                android:id="@+id/pillcount5"
+                android:layout_alignRight="@+id/med_photo5"
+                android:layout_alignEnd="@+id/med_photo5"
+                android:layout_marginTop="9dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginEnd="13dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/med_photo5" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+
+</ScrollView>

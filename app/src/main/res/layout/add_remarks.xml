@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv1"
+        >
+
+    </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/rel_addremarks"
+            android:layout_weight="2.07">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD REMARKS"
+            android:textSize="35dp"
+            android:textColor="@color/ColorPrimaryDark"
+            android:id="@+id/remark_label"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/remark_text"
+            android:layout_alignStart="@+id/remark_text" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="100dp"
+                android:hint="Remarks"
+                android:textColorHint="@android:color/darker_gray"
+                android:id="@+id/remark_text"
+                android:layout_below="@+id/remark_label"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="150dp"
+                android:layout_height="28dp"
+                android:text="BACK"
+                android:id="@+id/back_remark"
+                android:layout_marginBottom="12dp"
+                android:background="@color/ColorPrimary"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/remark_text"
+                android:layout_alignLeft="@+id/remark_text"
+                android:layout_alignStart="@+id/remark_text" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="150dp"
+                android:layout_height="28dp"
+                android:text="SAVE"
+                android:id="@+id/save_remark"
+                android:layout_marginBottom="12dp"
+                android:background="@color/ColorPrimary"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/remark_text"
+                android:layout_alignRight="@+id/remark_text"
+                android:layout_alignEnd="@+id/remark_text" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

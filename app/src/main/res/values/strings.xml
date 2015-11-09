@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MEDIAPP</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_edit1">Edit</string>
+    <string name="title_activity_addremarks">Add Remarks</string>
+    <string name="title_activity_tab1">Menu</string>
+
+    <string name="med1_name">MedOne</string>
+    <string name="med1_desc">Description</string>
+    <string name="med1_alarm">23:00</string>
+
+    <string name="med2_name">MedTwo</string>
+    <string name="med2_desc">Description</string>
+    <string name="med2_alarm">23:00</string>
+
+    <string name="med3_name">MedThree</string>
+    <string name="med3_desc">Description</string>
+    <string name="med3_alarm">23:00</string>
+
+    <string name="med4_name">MedFour</string>
+    <string name="med4_desc">Description</string>
+    <string name="med4_alarm">23:00</string>
+
+    <string name="med5_name">MedFive</string>
+    <string name="med5_desc">Description</string>
+    <string name="med5_alarm">23:00</string>
+
+
+
+</resources>
